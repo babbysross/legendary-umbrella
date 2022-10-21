@@ -1,0 +1,13 @@
+spam = ["Lucas", "maria", "Simone", "Gareth", "Sylvia"] #initiate list of names
+spam.sort(key=str.lower) #sort alphabetically, without the key it would sort ASCIIbetically (i.e A-Z precedes a-z)
+print(spam)
+
+print(list("Harry")[0] + "\n")
+
+for name in range(len(spam)):   #for the number of names in list spam, do
+    for letter in range(len(spam[name])):   #for the number of letters in the name currently selected by the previous for loop
+        print(list(spam[name])[letter])     #print the current letter selected by the for loop, for the current name selected by the previous for loop
+    
+dude = "Bart the welder" #This string is  15 characters long, said characters can be addressed like a list
+dudeName = dude[:4] + " " + str.upper(dude[9]) + dude[10:15] + "man"
+print(dude + " a.k.a. " + dudeName)

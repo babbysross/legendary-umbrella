@@ -27,6 +27,6 @@ for guesses in range(1, 7):
         break
 
 if not guess == answer:
-    print("Too many wrong guesses, better luck next time.")
+    print("\nToo many wrong guesses, better luck next time.")
 else:
     print("\nThanks for playing!")
